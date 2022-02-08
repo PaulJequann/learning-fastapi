@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-api-course"
+version = "0.1.0"
+description = ""
+authors = ["PJ <paul@pauljequann.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.73.0"}
+psycopg2 = "^2.9.3"
+python-dotenv = "^0.19.2"
+SQLAlchemy = "^1.4.31"
+passlib = "^1.7.4"
+bcrypt = "^3.2.0"
+python-jose = "^3.3.0"
+alembic = "^1.7.6"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
