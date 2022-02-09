@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from . import models
-from .database import engine
-from .routers import post, user, auth, vote
+# from app.models import models
+# from db.database import engine
+from app.routers import post, user, auth, vote
 
 
 # models.Base.metadata.create_all(bind=engine)

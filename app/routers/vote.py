@@ -1,7 +1,9 @@
-from email.policy import HTTP
-from fastapi import Body, FastAPI, Response, status, HTTPException, Depends, APIRouter
-from .. import models, schemas, database, oauth2
+from fastapi import status, HTTPException, Depends, APIRouter
 from sqlalchemy.orm import Session
+from app.db import database
+from app.schemas import schemas
+from app.models import models
+from app.core import oauth2
 
 router = APIRouter(prefix="/vote", tags=["Vote"])
 
